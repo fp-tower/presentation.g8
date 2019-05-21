@@ -17,3 +17,5 @@ target/
 project/project/
 benchData/
 _site/
+
+.DS_Store
