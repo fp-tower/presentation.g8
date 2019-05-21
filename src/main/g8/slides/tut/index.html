@@ -8,20 +8,52 @@
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Droid Serif', 'Helvetica'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz', 'Gill Sans';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono', 'Consolas', 'Courier New'; }
+      body { font-family: 'Droid Serif'; color: #333333; }
+      h1 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; color: #074548; }
+      h2, h3 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; color: #6f9a9c; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .medium { font-size: 28px; }
+      .large { font-size: 36px; }
+      .pull-left { float: left; width: 47%; }
+      .pull-right { float: right; width: 47%; }
+      .large-left { float: left; width: 57%; }
+      .small-right { float: right; width: 27%; }
+      .medium-right { float: right; width: 37%; }
+      .footer { position: absolute; bottom: 12px; left: 45px }
+      table { border-collapse: collapse; display: inline-block; }
+      th, td { padding: 10px; border: 1px solid black; }
+      tr:nth-child(even) {background-color: #f2f2f2;}
     </style>
   </head>
   <body>
     <textarea id="source">
 
-```tut:invisible
+class: center, middle
 
-```
+<a href="https://github.com/fp-tower">
+  <img src="img/symbol-solid-color" alt="logo" style="width:600px;"/>
+</a>
+
+<br>
+<br>
+
+
+# $title$
+$author$ • `@JulienTruffaut`
+
+???
+- notes here
+- see https://remarkjs.com/#1
+
+
+---
+layout: true
+
+<div class="footer">
+  <a href="https://github.com/fp-tower">
+    <img src="img/symbol-solid-gray-b3b3b3.svg" alt="logo" style="width:100px;"/>
+  </a>
+</div>
 
 class: center, middle
 
@@ -73,14 +105,15 @@ Code and slides at `$github_id$/$name$` on GitHub
 ## Questions?
 
 
-
-
-
  </textarea>
-    <script src="remark-latest.min.js">
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+        var slideshow = remark.create({
+            ratio: "16:9",
+            slideNumberFormat: '%current%',
+            highlightLines: true
+        });
     </script>
   </body>
 </html>
