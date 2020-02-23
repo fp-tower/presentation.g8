@@ -1,3 +1,7 @@
+# Generated files
+slides/docs/*.html
+/docs/
+
 ## IntelliJ files to ignore
 *.iml
 *.iws
